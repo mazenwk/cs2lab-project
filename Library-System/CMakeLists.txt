@@ -19,10 +19,10 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
-        studentdata.h
-        studentdata.cpp
-        bookdata.h
-        bookdata.cpp
+        studentdata.h studentdata.cpp
+        bookdata.h bookdata.cpp
+        purchasedialog.h purchasedialog.cpp purchasedialog.ui
+        purchasedbooksdialog.h purchasedbooksdialog.cpp purchasedbooksdialog.ui
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
