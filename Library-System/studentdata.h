@@ -14,7 +14,7 @@ private:
 
 
 public:
-    StudentData();
+    StudentData(QString n, QString p, QString id, double AB);
     void setName(QString n);
     void setPassword(QString p);
     void setId(QString id);

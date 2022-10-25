@@ -7,15 +7,15 @@
 class BookData
 {
 public:
-    BookData(QString _name, int _price);
+    BookData(QString _name, double _price);
     void setName(QString _name);
     QString getName();
-    void setPrice(int _price);
-    int getPrice();
+    void setPrice(double _price);
+    double getPrice();
 
 private:
     QString name{};
-    int price{};
+    double price{};
 };
 
 #endif // BOOKDATA_H
