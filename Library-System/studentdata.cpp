@@ -1,37 +1,37 @@
 #include "studentdata.h"
 
-StudentData::StudentData(QString n, QString p, QString id, double AB)
+StudentData::StudentData(QString _name, QString _password, QString _id, double _accountBalance)
 {
-    setName(n);
-    setPassword(p);
-    setId(id);
-    setAccountBalance(AB);
+    setName(_name);
+    setPassword(_password);
+    setId(_id);
+    setAccountBalance(_accountBalance);
 
 }
 
-void StudentData::setName(QString n)
+void StudentData::setName(QString _name)
 {
-    Name = n;
+    name = _name;
 }
 
-void StudentData::setPassword(QString p)
+void StudentData::setPassword(QString _password)
 {
-    password = p;
+    password = _password;
 }
 
-void StudentData::setId(QString id)
+void StudentData::setId(QString _id)
 {
-    Id = id;
+    id = _id;
 }
 
-void StudentData::setAccountBalance(double AB)
+void StudentData::setAccountBalance(double _accountBalance)
 {
-    AccountBalance = AB;
+    accountBalance = _accountBalance;
 }
 
 QString StudentData::getName()
 {
-    return Name;
+    return name;
 }
 
 QString StudentData::getPassword()
@@ -41,10 +41,10 @@ QString StudentData::getPassword()
 
 QString StudentData::getId()
 {
-    return Id;
+    return id;
 }
 
-double StudentData::getAB()
+double StudentData::getAaccountBalance()
 {
-    return AccountBalance;
+    return accountBalance;
 }

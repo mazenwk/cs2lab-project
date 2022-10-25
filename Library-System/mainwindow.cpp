@@ -27,7 +27,7 @@ void MainWindow::on_pushButton_SignIn_clicked()
                 ui->label_Output_ExistsOrNot->setText("Signed in successfully");
                 signedInStudent = new StudentData(registeredUsernames[i], registeredPasswords[i], registeredIds[i], registeredBalances[i]);
                 ui->label_Output_ID->setText(signedInStudent->getId());
-                ui->label_Output_Balance->setText(QString::number(signedInStudent->getAB()) + " LE");
+                ui->label_Output_Balance->setText(QString::number(signedInStudent->getAaccountBalance()) + " LE");
                 // Open window
                 PurchaseDialog pd(signedInStudent);
                 pd.setModal(true);
