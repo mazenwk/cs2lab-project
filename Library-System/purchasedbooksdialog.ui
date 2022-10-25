@@ -45,8 +45,13 @@
      <height>281</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
    <property name="text">
-    <string>b</string>
+    <string/>
    </property>
   </widget>
  </widget>

@@ -14,7 +14,7 @@ private:
 
 
 public:
-    QList<QString *> PurchasedBooks;
+    QList<QString> PurchasedBooks;
 
     StudentData(QString n, QString p, QString id, double AB);
     void setName(QString n);

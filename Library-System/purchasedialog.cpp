@@ -1,5 +1,6 @@
 #include "purchasedialog.h"
 #include "ui_purchasedialog.h"
+#include "purchasedbooksdialog.h"
 #include <QString>
 
 PurchaseDialog::PurchaseDialog(StudentData* _data, QWidget *parent) :
@@ -40,7 +41,7 @@ void PurchaseDialog::on_pushButtonBuyBook_clicked()
         data->setAccountBalance(data->getAB() - ui->labelBookPrice->text().toDouble());
         ui->BalanceNumber->setText(QString::number(data->getAB()));
         ui->labelMessage->setText("Bought successfully");
-        //data->PurchasedBooks.append(ui->comboBoxBookOption->itemData(ui->comboBoxBookOption->currentIndex()));
+        data->PurchasedBooks.append(books[ui->comboBoxBookOption->currentIndex()]->getName());
     }
 }
 
@@ -58,6 +59,8 @@ void PurchaseDialog::on_pushButton_Recharge_clicked()
 
 void PurchaseDialog::on_pushButton_view_clicked()
 {
-
+    PurchasedBooksDialog pbd(data->PurchasedBooks);
+    pbd.setModal(true);
+    pbd.exec();
 }
 
