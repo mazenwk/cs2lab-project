@@ -1,5 +1,6 @@
 #include "mainwindow.h"
 #include "./ui_mainwindow.h"
+#include "purchasedialog.h"
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -28,6 +29,9 @@ void MainWindow::on_pushButton_SignIn_clicked()
                 ui->label_Output_ID->setText(signedInStudent->getId());
                 ui->label_Output_Balance->setText(QString::number(signedInStudent->getAB()) + " LE");
                 // Open window
+                PurchaseDialog pd;
+                pd.setModal(true);
+                pd.exec();
                 signedIn = true;
                 break;
             } else { passWrong = true;}
