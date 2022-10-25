@@ -36,22 +36,19 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="label_Output_BooksBought">
+  <widget class="QTextEdit" name="textEdit_Output_BooksBought">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>30</x>
      <y>90</y>
-     <width>361</width>
-     <height>281</height>
+     <width>461</width>
+     <height>331</height>
     </rect>
    </property>
    <property name="font">
     <font>
      <pointsize>12</pointsize>
     </font>
-   </property>
-   <property name="text">
-    <string/>
    </property>
   </widget>
  </widget>

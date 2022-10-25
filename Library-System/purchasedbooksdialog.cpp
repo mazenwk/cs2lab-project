@@ -9,8 +9,10 @@ PurchasedBooksDialog::PurchasedBooksDialog(QList<QString> purchasedBooks, QWidge
 {
     ui->setupUi(this);
 
+    ui->textEdit_Output_BooksBought->setReadOnly(true);
+
     for (int i =0; i < purchasedBooks.count(); i++) {
-        ui->label_Output_BooksBought->setText(ui->label_Output_BooksBought->text() + purchasedBooks[i] + '\n');
+        ui->textEdit_Output_BooksBought->append(purchasedBooks[i]);
     }
 }
 

@@ -16,7 +16,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>MainWindow</string>
+   <string>Sign In</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QLabel" name="Label_Account_information">
