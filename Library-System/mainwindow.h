@@ -1,5 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
+#include <QString>
+#include "StudentData.h"
 
 #include <QMainWindow>
 
@@ -14,6 +16,17 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+    static const int SIZE = 3;
+    QString registeredUsernames[SIZE] = {"Andrew", "Mazen", "Habiba"};
+    QString registeredPasswords[SIZE] = {"andrew1", "mazen2", "habiba3"};
+    QString registeredIds[SIZE] = {"001", "002", "003"};
+    double registeredBalances[SIZE] = {100, 50, 76};
+
+    StudentData* signedInStudent;
+
+private slots:
+    void on_pushButton_SignIn_clicked();
 
 private:
     Ui::MainWindow *ui;

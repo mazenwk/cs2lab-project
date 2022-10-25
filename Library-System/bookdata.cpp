@@ -1,6 +1,6 @@
 #include "bookdata.h"
 
-BookData::BookData(QString _name, int _price)
+BookData::BookData(QString _name, double _price)
 {
     setName(_name);
     setPrice(_price);
@@ -16,12 +16,12 @@ QString BookData::getName()
     return name;
 }
 
-void BookData::setPrice(int _price)
+void BookData::setPrice(double _price)
 {
     price = _price;
 }
 
-int BookData::getPrice()
+double BookData::getPrice()
 {
     return price;
 }

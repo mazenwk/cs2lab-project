@@ -1,7 +1,11 @@
 #include "studentdata.h"
 
-StudentData::StudentData()
+StudentData::StudentData(QString n, QString p, QString id, double AB)
 {
+    setName(n);
+    setPassword(p);
+    setId(id);
+    setAccountBalance(AB);
 
 }
 
