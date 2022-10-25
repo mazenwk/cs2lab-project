@@ -19,6 +19,10 @@ set(PROJECT_SOURCES
         mainwindow.cpp
         mainwindow.h
         mainwindow.ui
+        studentdata.h
+        studentdata.cpp
+        bookdata.h
+        bookdata.cpp
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
