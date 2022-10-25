@@ -29,7 +29,7 @@ void MainWindow::on_pushButton_SignIn_clicked()
                 ui->label_Output_ID->setText(signedInStudent->getId());
                 ui->label_Output_Balance->setText(QString::number(signedInStudent->getAB()) + " LE");
                 // Open window
-                PurchaseDialog pd;
+                PurchaseDialog pd(signedInStudent);
                 pd.setModal(true);
                 pd.exec();
                 signedIn = true;

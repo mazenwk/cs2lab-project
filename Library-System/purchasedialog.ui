@@ -42,7 +42,7 @@
    </property>
    <property name="font">
     <font>
-     <pointsize>4</pointsize>
+     <pointsize>10</pointsize>
     </font>
    </property>
   </widget>
@@ -51,7 +51,7 @@
     <rect>
      <x>30</x>
      <y>130</y>
-     <width>171</width>
+     <width>111</width>
      <height>31</height>
     </rect>
    </property>
@@ -98,14 +98,19 @@
   <widget class="QLabel" name="IDNumber">
    <property name="geometry">
     <rect>
-     <x>160</x>
-     <y>220</y>
+     <x>120</x>
+     <y>215</y>
      <width>101</width>
      <height>21</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="Balance">
@@ -129,14 +134,19 @@
   <widget class="QLabel" name="BalanceNumber">
    <property name="geometry">
     <rect>
-     <x>160</x>
+     <x>120</x>
      <y>250</y>
      <width>101</width>
      <height>16</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
    <property name="text">
-    <string>TextLabel</string>
+    <string/>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_Recharge">
@@ -173,6 +183,42 @@
    </property>
    <property name="text">
     <string>View Purchased Books</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelBookPrice">
+   <property name="geometry">
+    <rect>
+     <x>133</x>
+     <y>138</y>
+     <width>161</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="labelMessage">
+   <property name="geometry">
+    <rect>
+     <x>154</x>
+     <y>166</y>
+     <width>301</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string/>
    </property>
   </widget>
  </widget>
